@@ -1,0 +1,310 @@
+@media (max-width: 1120px) {
+    .hero_area {
+        height: auto;
+    }
+
+    /* Slightly tighten the models grid at medium widths */
+    .flexmodellist-header.compact,
+    .row-main {
+        grid-template-columns: 60px 180px 1fr 200px 160px 48px;
+    }
+
+    .slider_section {
+        padding: 50px 0;
+    }
+
+}
+
+/* Tablet/medium screens: 768px to 1024px - reduce spacing and font size */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav-links {
+        gap: 25px;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Content box responsive adjustments */
+    .content-box,
+    .content-box-models {
+        min-width: auto;
+        max-width: 100%;
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .standard-article {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .user_option {
+        flex-direction: column;
+    }
+
+    .custom_nav-container .nav_search-btn {
+        background-position: center;
+        margin-top: 10px;
+    }
+
+    .user_option a {
+        margin-bottom: 10px;
+    }
+
+    .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .info_section .col-md-3 {
+        text-align: center;
+    }
+
+    .info_section .col-md-3:not(:nth-last-child(1)) {
+        margin-bottom: 35px;
+    }
+
+    .who_section .detail-box {
+        margin-left: 15px;
+        margin-top: 35px;
+    }
+
+    .work_section .work_container .box.b-1,
+    .work_section .work_container .box.b-2,
+    .work_section .work_container .box.b-3,
+    .work_section .work_container .box.b-4 {
+        width: 100%;
+    }
+
+    .info_section .col-md-3>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info_section .info_form .social_box {
+        justify-content: center;
+    }
+
+    .info_section .info_form .social_box a {
+        margin: 0 10px;
+    }
+
+    .footer_section p {
+        padding: 20px 30px;
+    }
+}
+
+/* Hamburger menu and mobile header styles */
+@media (max-width: 768px) {
+    /* keep flex logo and nfdi logo visible on left */
+    .nav-logos { display: flex; gap: 12px; align-items: center; flex-shrink: 0; }
+    .nav-sponsor-mobile { display: flex !important; align-items: center; }
+    .nav-sponsor-mobile img { height: 42px; width: auto; }
+    /* hide nfdi logo on right, textual nav links on mobile */
+    .nav-sponsor { display: none; }
+    .nav-links { display: none; }
+    .nav-controls { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+    #menuToggle { display: inline-flex !important; background: transparent; border: none; font-size: 22px; padding: 6px 8px; cursor: pointer; }
+
+    /* Mobile menu panel (centered) */
+    .mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; z-index: 999; justify-content: center; padding: 12px 16px; background: rgba(255, 255, 255, 0.98); }
+    .mobile-menu.show { display: flex; }
+    .mobile-menu .menu-panel { width: calc(100% - 32px); max-width: 420px; background: #ffffff; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+    /* Higher-contrast buttons for accessibility (tuned darker) */
+    /* Use site accent colors (matches .expand-btn) for consistent look */
+    .mobile-menu a { display: block; padding: 10px 12px; color: #ffffff; text-decoration: none; text-align: center; border-radius: 8px; background: #1c777a; font-weight: 600; box-shadow: 0 2px 6px rgba(28,119,122,0.18); transition: background-color 140ms ease, transform 120ms ease, box-shadow 140ms ease; }
+    .mobile-menu a:hover { background: #166066; color: #ffffff; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(22,96,102,0.18); }
+    .mobile-menu a:focus { outline: 3px solid rgba(28,119,122,0.18); outline-offset: 3px; }
+    .mobile-menu .menu-panel hr { border: none; border-top: 1px solid rgba(0,0,0,0.06); margin: 8px 0; }
+    
+    /* Ensure footer is always visible and below the menu */
+    footer { position: relative; z-index: 1; }
+}
+
+@media (min-width: 769px) {
+    .nav-logos { display: flex; }
+    .nav-links { display: flex !important; }
+    .nav-sponsor { display: flex !important; }
+    .nav-sponsor-mobile { display: none; }
+    .nav-controls { display: flex; }
+    #menuToggle { display: none !important; }
+    .mobile-menu { display: none !important; }
+}
+
+/* Mobile: below 768px */
+@media (max-width: 768px) {
+    /* Content box responsive adjustments for mobile */
+    .content-box,
+    .content-box-models {
+        min-width: auto;
+        max-width: 100%;
+        margin: 12px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .standard-article {
+        padding: 12px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .intro, .get-started, .nfdi4energy {
+        padding: 12px;
+    }
+
+    .intro p, .get-started p, .nfdi4energy p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider_section .detail-box h1 {
+        font-size: 3.5rem;
+    }
+
+    .do_section .do_container .arrow_bg::before {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small screen content adjustments */
+    .content-box,
+    .content-box-models {
+        margin: 8px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .standard-article {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .intro, .get-started, .nfdi4energy {
+        padding: 8px;
+    }
+
+    .intro p, .get-started p, .nfdi4energy p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 420px) {
+    .slider_section .detail-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .slider_section .detail-box h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 360px) {}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* Hamburger menu and mobile header styles */
+@media (max-width: 768px) {
+    /* keep logos visible */
+    .nav-logos { display: flex; gap: 12px; align-items: center; }
+    /* hide inline textual nav links */
+    .nav-links a { display: none; }
+    .nav-controls { display: flex; gap: 8px; align-items: center; }
+    #menuToggle { display: inline-flex !important; background: transparent; border: none; font-size: 22px; padding: 6px 8px; cursor: pointer; }
+
+    /* Mobile menu panel is defined once above to avoid duplicates */
+}
+
+@media (min-width: 769px) {
+    .menu-toggle { display: none; }
+    .mobile-menu { display: none !important; }
+}
+
+/* Responsive rules for models list */
+@media (max-width: 768px) {
+    /* Collapse main row to three columns: Year | Title+Authors | Details */
+    .flexmodellist-header.compact,
+    .row-main {
+        grid-template-columns: 70px 1fr 48px;
+    }
+
+    /* Hide less-important columns in the compact main row to save space */
+    .flexmodellist-header.compact p.usecase,
+    .flexmodellist-header.compact p.methodology,
+    .row-main .usecase,
+    .row-main .methodology {
+        display: none;
+    }
+
+    /* Make authors and title align well inside the single large column */
+    .row-main .authors,
+    .row-main .title {
+        grid-column: 2 / 3;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Hide the Details header on small screens - the expand button is sufficient */
+    .flexmodellist-header.compact p.expand-col {
+        display: none;
+    }
+
+    /* Ensure the header 'Publication' label sits cleanly in the middle column and leaves
+       room on the right so it doesn't overlap the expand button */
+    .flexmodellist-header.compact p.title {
+        grid-column: 2 / 3;
+        padding-right: 64px; /* leave space for the expand button */
+        text-align: left;
+        white-space: normal;
+    }
+
+    /* Stack details into a single column inside the details grid */
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .flexmodellist-header.compact p { padding: 8px 6px; font-size: 13px; }
+    .row-main { padding: 8px 6px; }
+    .expand-btn { padding: 6px 8px; font-size: 14px; }
+}

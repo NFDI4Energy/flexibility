@@ -22,8 +22,6 @@ $_SESSION['currentpage'] = 'contact';
                     you to contact us via mail.</p>
 
                 <ul>
-                    <li><strong>Dennis Weller</strong> <a href="mailto:dennis.weller@offis.de">dennis.weller at
-                            offis.de</a></li>
                     <li><strong>Emilie Frost</strong> <a href="mailto:emilie.frost@offis.de">emilie.frost at
                             offis.de</a>
                     </li>
